@@ -36,7 +36,7 @@ export default function Landing() {
     if (pathname === "/") return
     if (platform === "android") {
       try {
-        window.location.href = `flickd-app://${pathname}`
+        window.location.href = `gluf-app://${pathname}`
       } catch (error) {
         console.error("Error navigating to app:", error)
       }
