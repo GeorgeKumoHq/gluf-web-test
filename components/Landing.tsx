@@ -33,7 +33,6 @@ export default function Landing() {
   }, [])
 
   useEffect(() => {
-    if (pathname === "/") return
     if (platform === "android") {
       try {
         window.location.href = `gluf-app://${pathname}`
